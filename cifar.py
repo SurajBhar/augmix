@@ -69,6 +69,7 @@ parser.add_argument(
     '-pt',
     action='store_true',
     help='Switch between pretrained and not-pretrained mode')
+# Optimization options
 parser.add_argument(
     '--optimizer',
     '-op',
@@ -84,14 +85,14 @@ parser.add_argument(
     default='LambdaLR',
     choices=['LambdaLR','CosineAnnealingLR'],
     help='Switch between LambdaLR and CosineAnnealingLR')
-# Optimization options
+
 parser.add_argument(
-    '--epochs', '-e', type=int, default=100, help='Number of epochs to train.')
+    '--epochs', '-e', type=int, default=94, help='Number of epochs to train.')#default=100
 parser.add_argument(
     '--learning-rate',
     '-lr',
     type=float,
-    default=0.1,
+    default=5e-5, #original value = 0.1
     help='Initial learning rate.')
 parser.add_argument(
     '--batch-size', '-b', type=int, default=128, help='Batch size.')
@@ -101,7 +102,7 @@ parser.add_argument(
     '--decay',
     '-wd',
     type=float,
-    default=0.0005,
+    default=1e-8, #original value = 0.0005
     help='Weight decay (L2 penalty).')
 # WRN Architecture options
 parser.add_argument(
@@ -140,7 +141,7 @@ parser.add_argument(
     '--save',
     '-s',
     type=str,
-    default='./experiments/convnext_pt',
+    default='./final_adam_hy_exp/h_convnext_pt',##############################################
     help='Folder to save checkpoints.')
 parser.add_argument(
     '--resume',
@@ -491,7 +492,7 @@ def main():
         'optimizer': optimizer.state_dict(),
     }
 
-    save_path = os.path.join(args.save, 'convnextpt_checkpoint.pth.tar')
+    save_path = os.path.join(args.save, 'h_convnext_pt_checkpoint.pth.tar')#################
     torch.save(checkpoint, save_path)
     if is_best:
       shutil.copyfile(save_path, os.path.join(args.save, 'model_best.pth.tar'))
