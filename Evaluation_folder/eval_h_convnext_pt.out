@@ -1,0 +1,38 @@
+/home/g051176/env/latest/lib/python3.7/site-packages/torchvision/models/_utils.py:209: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.
+  f"The parameter '{pretrained_param}' is deprecated since 0.13 and will be removed in 0.15, "
+/home/g051176/env/latest/lib/python3.7/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=ConvNeXt_Tiny_Weights.IMAGENET1K_V1`. You can also use `weights=ConvNeXt_Tiny_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Error 90.46000000000001
+
+gaussian_noise Flipping Prob
+0.4006733333333258
+
+shot_noise Flipping Prob
+0.45768333333332445
+
+motion_blur Flipping Prob
+0.22192500000000095
+
+zoom_blur Flipping Prob
+0.030413333333333733
+
+spatter Flipping Prob
+0.11485333333333322
+
+brightness Flipping Prob
+0.04579666666666922
+
+translate Flipping Prob
+0.296819999999997
+
+rotate Flipping Prob
+0.22253333333332864
+
+tilt Flipping Prob
+0.15032666666666433
+
+scale Flipping Prob
+0.2160866666666614
+[0.4006733333333258, 0.45768333333332445, 0.22192500000000095, 0.030413333333333733, 0.11485333333333322, 0.04579666666666922, 0.296819999999997, 0.22253333333332864, 0.15032666666666433, 0.2160866666666614]
+
+Mean Flipping Prob	0.21571

@@ -1,0 +1,38 @@
+/home/g051176/env/latest/lib/python3.7/site-packages/torchvision/models/_utils.py:209: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.
+  f"The parameter '{pretrained_param}' is deprecated since 0.13 and will be removed in 0.15, "
+/home/g051176/env/latest/lib/python3.7/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Error 90.92
+
+gaussian_noise Flipping Prob
+0.12300666666666626
+
+shot_noise Flipping Prob
+0.1621199999999973
+
+motion_blur Flipping Prob
+0.12767500000000193
+
+zoom_blur Flipping Prob
+0.015419999999999308
+
+spatter Flipping Prob
+0.08342333333333411
+
+brightness Flipping Prob
+0.03103000000000049
+
+translate Flipping Prob
+0.2012600000000053
+
+rotate Flipping Prob
+0.1638199999999964
+
+tilt Flipping Prob
+0.062273333333336255
+
+scale Flipping Prob
+0.09575333333333222
+[0.12300666666666626, 0.1621199999999973, 0.12767500000000193, 0.015419999999999308, 0.08342333333333411, 0.03103000000000049, 0.2012600000000053, 0.1638199999999964, 0.062273333333336255, 0.09575333333333222]
+
+Mean Flipping Prob	0.10658
