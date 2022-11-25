@@ -2,6 +2,10 @@
 
 <img align="center" src="assets/augmix.gif" width="750">
 
+
+## Title
+Performance evaluation of Resnet18 & ConvNeXt_tiny on OOD (Out of Distribution) Robustness using Cifar-10-C and Cifar-10-P datasets
+
 ## Objectives
 
 The main tasks assigned for this study are:
@@ -13,7 +17,7 @@ augmix code (not-pretrained and pre-trained).
 (b) SGD optimizer and lambda learning rate scheduler.
 3. Hyperparameter tuning of convnext-tiny model to improve it’s performance
 
-For more details please see our [ICLR 2020 paper](https://arxiv.org/pdf/1912.02781.pdf).
+For more details please see [ICLR 2020 paper](https://arxiv.org/pdf/1912.02781.pdf) and the attached report in this repository "Bhardwaj-Suraj-1531066.pdf".
 
 ## Pseudocode
 
@@ -28,7 +32,7 @@ For more details please see our [ICLR 2020 paper](https://arxiv.org/pdf/1912.027
 
 ## Setup
 
-1.  Install PyTorch and other required python libraries with:
+The setup procedure is similar to the original Augmix paper setup.
 
     ```
     pip install -r requirements.txt
@@ -44,12 +48,10 @@ For more details please see our [ICLR 2020 paper](https://arxiv.org/pdf/1912.027
 
 ## Usage
 
-The Jensen-Shannon Divergence loss term may be disabled for faster training at the cost of slightly lower performance by adding the flag `--no-jsd`.
-
-Training recipes used in our paper:
+Training recipes used in this study:
 
 WRN: `python cifar.py`
-
 Resnet18: `python cifar.py -m resnet18 -pt -op AdamW -sc CosineAnnealingLR`
-
+Resnet18: `python cifar.py -m resnet18 -op AdamW -sc CosineAnnealingLR`
+ConvNeXt_tiny: `python cifar.py -m convnext_tiny -pt -op AdamW -sc CosineAnnealingLR`
 ConvNeXt_tiny: `python cifar.py -m convnext_tiny -op AdamW -sc CosineAnnealingLR`
