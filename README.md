@@ -22,7 +22,7 @@ For more details please see [ICLR 2020 paper](https://arxiv.org/pdf/1912.02781.p
 ## Results
 
 <img align="center" src="assets/Table4.png" width="750">
-<img align="center" src="assets/Matplotlib_plot" width="750">
+<img align="center" src="assets/Matplotlib_plot" width="300">
 
 ## Requirements
 *   numpy>=1.15.0
