@@ -4,7 +4,7 @@
 
 
 ## Title
-Performance evaluation of Resnet18 & ConvNeXt_tiny on OOD (Out of Distribution) Robustness using Cifar-10-C and Cifar-10-P datasets
+"Performance evaluation of Resnet18 & ConvNeXt_tiny on OOD (Out of Distribution) Robustness using AugMix"
 
 ## Objectives
 
@@ -24,27 +24,10 @@ For more details please see [ICLR 2020 paper](https://arxiv.org/pdf/1912.02781.p
 <img align="center" src="assets/pseudocode.png" width="750">
 
 ## Requirements
-
 *   numpy>=1.15.0
 *   Pillow>=6.1.0
 *   torch>=1.2.0
 *   torchvision==0.14.0
-
-## Setup
-
-The setup procedure is similar to the original Augmix paper setup.
-
-    ```
-    pip install -r requirements.txt
-    ```
-
-2.  Download CIFAR-10-C dataset with:
-
-    ```
-    mkdir -p ./data/cifar
-    curl -O https://zenodo.org/record/2535967/files/CIFAR-10-C.tar
-    tar -xvf CIFAR-10-C.tar -C data/cifar/
-    ```
 
 ## Usage
 
@@ -55,3 +38,5 @@ Resnet18: `python cifar.py -m resnet18 -pt -op AdamW -sc CosineAnnealingLR`
 Resnet18: `python cifar.py -m resnet18 -op AdamW -sc CosineAnnealingLR`
 ConvNeXt_tiny: `python cifar.py -m convnext_tiny -pt -op AdamW -sc CosineAnnealingLR`
 ConvNeXt_tiny: `python cifar.py -m convnext_tiny -op AdamW -sc CosineAnnealingLR`
+
+For more details regarding usage you can refer to run-jobscript.sh file.
