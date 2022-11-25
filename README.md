@@ -19,9 +19,10 @@ augmix code (not-pretrained and pre-trained).
 
 For more details please see [ICLR 2020 paper](https://arxiv.org/pdf/1912.02781.pdf) and the attached report in this repository "Bhardwaj-Suraj-1531066.pdf".
 
-## Pseudocode
+## Results
 
-<img align="center" src="assets/pseudocode.png" width="750">
+<img align="center" src="assets/Table4.png" width="750">
+<img align="center" src="assets/Matplotlib_plot" width="750">
 
 ## Requirements
 *   numpy>=1.15.0
