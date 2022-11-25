@@ -1,9 +1,5 @@
-# AugMix
+# Title
 
-<img align="center" src="assets/augmix.gif" width="750">
-
-
-## Title
 "Performance evaluation of Resnet18 & ConvNeXt_tiny on OOD (Out of Distribution) Robustness using AugMix"
 
 ## Objectives
