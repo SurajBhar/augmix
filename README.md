@@ -21,6 +21,10 @@ the train and test distribution do not match.
 
 For more details please see our [ICLR 2020 paper](https://arxiv.org/pdf/1912.02781.pdf).
 
+## Pseudocode
+
+<img align="center" src="assets/pseudocode.png" width="750">
+
 ## Objectives
 
 The main tasks assigned for this study are:
@@ -33,10 +37,6 @@ augmix code (not-pretrained and pre-trained).
 3. Hyperparameter tuning of convnext-tiny model to improve it’s performance
 
 For more details please see [ICLR 2020 paper](https://arxiv.org/pdf/1912.02781.pdf) and the attached report in this repository "Bhardwaj-Suraj-1531066.pdf".
-
-## Pseudocode
-
-<img align="center" src="assets/pseudocode.png" width="750">
 
 ## Requirements
 *   numpy>=1.15.0
